@@ -1,0 +1,180 @@
+/* Reset styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Page styles */
+body {
+	background-image: url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg);
+	background-size: cover;
+	background-position: center;
+	animation: slideshow 30s infinite;
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+
+@keyframes slideshow {
+	0% { background-image: url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg); }
+	10% { background-image: url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg), url(/images/bg1.jpg); }
+	20% { background-image: url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg), url(/images/bg1.jpg), url(/images/bg2.jpg); }
+	30% { background-image: url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg), url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg); }
+	40% { background-image: url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg), url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg); }
+	50% { background-image: url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg), url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg); }
+	60% { background-image: url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg), url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg); }
+	70% { background-image: url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg), url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg); }
+	80% { background-image: url(/images/bg9.jpg), url(/images/bg10.jpg), url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg); }
+	90% { background-image: url(/images/bg10.jpg), url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg); }
+	100% { background-image: url(/images/bg1.jpg), url(/images/bg2.jpg), url(/images/bg3.jpg), url(/images/bg4.jpg), url(/images/bg5.jpg), url(/images/bg6.jpg), url(/images/bg7.jpg), url(/images/bg8.jpg), url(/images/bg9.jpg), url(/images/bg10.jpg); }
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+
+form {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #4CAF50;
+	font-size: 18px;
+}
+
+label[for="required"] {
+	color: red;
+}
+
+input[type="number"],
+input[type="date"],
+select {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+input:hover,
+input:focus {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+button[type="submit"] {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+	background-color: #32CD32;
+}
+
+table {
+	margin-top: 20px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+	background-color: orangered;
+}
+
+.summary {
+	margin-top: 20px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+span {
+	font-weight: normal;
+}
+
+/* Animations and Transitions */
+button,
+input[type="number"],
+input[type="date"],
+select {
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+    /* Reduce the font size for smaller screens */
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    label {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Further reduce the font size for even smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    label {
+        font-size: 14px;
+    }
+}
+
+
+
+
